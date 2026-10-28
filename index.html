@@ -1087,9 +1087,6 @@ function renderSheet(){
     }
     box.append(sec);
   }
-  // Volumen tidal
-  const vt = el("div", {class:"sgroup sg-vt"}, el("h3", {}, "Volumen tidal"), el("div", {class:"vtgrid", id:"sheetVt"}));
-  box.append(vt);
   const copy = el("button", {class:"btn", type:"button"}, "Copiar resumen");
   copy.addEventListener("click", () => {
     const lines = [`Peso ${fmt(+patient.wt,1)} kg${patient.age !== "" ? ` · ${patient.age} años` : ""}`];
